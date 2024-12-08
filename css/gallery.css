@@ -1,0 +1,27 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3em;
+    margin-left: -10px;
+}
+/* Від'ємний margin зліва для галереї має бути рівний по модулю лівому padding для .img-box (рядок 12) */
+
+.gallery .img-box {
+    width: 33.33%;
+    padding: 0 0 10px 10px;
+}
+
+.gallery .img-box img {
+    border-radius: 8px;
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:767px) {
+    .gallery .img-box {
+        width: 50%;
+    }
+}
